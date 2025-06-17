@@ -1,7 +1,6 @@
-/* Import fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Define CSS variables */
 :root {
   --color-primary: #ffffff;
   --color-secondary: #d3d3d3;
@@ -16,7 +15,7 @@
   --transition: 0.4s ease;
 }
 
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +24,7 @@
   color: var(--color-text);
 }
 
-/* Links */
+
 a {
   color: var(--color-text-secondary);
   text-decoration: none;
@@ -40,7 +39,7 @@ a:hover {
   color: black;
 }
 
-/* Body */
+
 body {
   overflow-x: hidden;
   accent-color: var(--color-primary);
@@ -48,12 +47,12 @@ body {
   transition: background-color var(--transition);
 }
 
-/* Smooth scrolling */
+
 html {
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -110,7 +109,7 @@ html {
   background-color: var(--color-secondary);
 }
 
-/* Page 1 */
+
 .page1 {
   display: flex;
   justify-content: center;

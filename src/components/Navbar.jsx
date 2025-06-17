@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import Page1 from './Page1'; // Verify these paths match your project structure
+import Page1 from './Page1'; 
 import Page2 from './Page2';
 import Page3 from './Page3';
 import { Link } from "react-scroll";
@@ -9,14 +9,14 @@ const Navbar = ({ showcontact, setshowcontact }) => {
   const navbarRef = useRef(null);
   const collapseRef = useRef(null);
 
-  // Function to collapse
+  
   const closeNavbar = () => {
     if (collapseRef.current) {
       collapseRef.current.classList.remove("show");
     }
   };
 
-  // Handle clicks outside navbar
+ 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
@@ -36,7 +36,7 @@ const Navbar = ({ showcontact, setshowcontact }) => {
       className="navbar navbar-expand-lg navbar-dark  fixed-top"
     >
       <div className="container-fluid">
-        {/* Brand / Profile */}
+        
         <Link
           to="page1"
           smooth={true}
@@ -44,12 +44,13 @@ const Navbar = ({ showcontact, setshowcontact }) => {
           duration={500}
           spy={true}
           className="navbar-brand"
+           style={{cursor:"pointer"}}
           onClick={closeNavbar}
         >
           Profile
         </Link>
 
-        {/* Toggler for mobile */}
+       
         <button
           className="navbar-toggler"
           type="button"
@@ -62,7 +63,7 @@ const Navbar = ({ showcontact, setshowcontact }) => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Navbar Links */}
+      
         <div
           className="collapse navbar-collapse"
           id="navbarScroll"
@@ -76,6 +77,7 @@ const Navbar = ({ showcontact, setshowcontact }) => {
                 offset={-70}
                 duration={500}
                 spy={true}
+                 style={{cursor:"pointer"}}
                 className="nav-link"
                 onClick={closeNavbar}
               >
@@ -91,15 +93,17 @@ const Navbar = ({ showcontact, setshowcontact }) => {
                 spy={true}
                 className="nav-link"
                 onClick={closeNavbar}
+                 style={{cursor:"pointer"}}
               >
                 About Me
               </Link>
             </li>
           </ul>
 
-          {/* Contact Button */}
+         
           <button
             className="btn btn-outline-light"
+            style={{cursor:"pointer"}}
             onClick={() => {
               setshowcontact(!showcontact);
               closeNavbar();
