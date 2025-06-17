@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 4rem;
+  padding: 0 var(--spacing-lg);
+  border-bottom: 1px solid var(--color-text-secondary);
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+  z-index: 500;
+}
+.custom-navbar {
+  background-color: transparent !important;
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.custom-brand {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.custom-link {
+  color: white !important;
+  margin-right: 15px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.custom-link:hover {
+  color: #ccc !important;
+  text-decoration: underline;
+}
+
+.custom-contact-btn {
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: 0.3s ease;
+}
+
+.custom-contact-btn:hover {
+  background-color: white;
+  color: black;
+}
